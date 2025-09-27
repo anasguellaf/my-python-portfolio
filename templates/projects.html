@@ -1,13 +1,13 @@
       <section id="projects" class="all-projects-container">
         <div class="section-square"></div>
         <h2>My Projects</h2>
-        {% for project in porjects%}
+        {% for project in projects %}
         <article class="project-container">
           <div class="project-img-container">
             <div class="project-img"><img src="{{ project.image }}" alt="{{ project.name }}"></div>
           </div>
           <div class="project-text-container">
-            <h3>{{ projects.name }}</h3>
+            <h3>{{ project.name }}</h3>
             <div class="project-techs">
               {% for tech in project.techs %}
               <span>{{ tech }}</span>
